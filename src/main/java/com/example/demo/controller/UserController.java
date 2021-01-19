@@ -24,7 +24,6 @@ public class UserController {
 	@RequestMapping("/")
 	public String addOrUpdate(ModelMap model) {
 		Users u = new Users();
-
 		model.addAttribute("USER", u);
 		model.addAttribute("ACTION","saveOrUpdate" );
 		return "register-user";
